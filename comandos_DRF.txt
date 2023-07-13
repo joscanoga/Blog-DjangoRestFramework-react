@@ -1,0 +1,8 @@
+Crear projecto en la carpeta actual como raiz
+django-admin startproject core .
+
+Correr en modo debug
+python3 manage.py runserver 127.0.0.1:8000
+
+recopila los archivos estáticos de tu proyecto en una ubicación centralizada para su distribución eficiente en entornos de producción.
+python manage.py collectstatic
