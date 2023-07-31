@@ -8,7 +8,7 @@ class Category(models.Model):
     
     parent = models.ForeignKey('self', blank=True, null=True, related_name='children', on_delete=models.CASCADE)
     name = models.CharField(max_length=255,unique=True)
-    thumbnail = models.ImageField(upload_to='/media/categories/', blank=True, null=True)
+    thumbnail = models.ImageField(upload_to='media/categories/', blank=True, null=True)
     
     def __str__(self):
         return self.name

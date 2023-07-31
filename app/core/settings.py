@@ -136,15 +136,11 @@ CSRF_TRUSTED_ORIGINS = [
 
 if not DEBUG:
     CORS_ORIGIN_WHITELIST = [
-        'https://solopython.com',
-        'https://admin.solopython.com',
-        'https://blog.solopython.com',
+        
     ]
 
     CSRF_TRUSTED_ORIGINS = [
-        'hhttps://solopython.com',
-        'https://admin.solopython.com',
-        'https://blog.solopython.com',
+        
     ]
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
