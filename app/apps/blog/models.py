@@ -10,6 +10,9 @@ def blog_directory_path(instance, filename):
     return 'blog/{0}/{1}'.format(instance.title, filename)
 
 class Post(models.Model):
+    """
+    Modelo de los post del blog
+    """
     
     class PostObjects(models.Manager):
         def get_queryset(self):

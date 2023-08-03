@@ -2,6 +2,9 @@ from django.db import models
 
 # Create your models here.
 class Category(models.Model):
+    """
+    Modelo de las categorias de los post
+    """
     class Meta:
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
